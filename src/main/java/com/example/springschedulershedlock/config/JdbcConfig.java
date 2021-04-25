@@ -13,7 +13,6 @@ public class JdbcConfig {
     public DataSource dormantMasterDataSource() {
         HikariConfig config = new HikariConfig();
         config.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        config.setJdbcUrl("192.168.1.219:13306");
         config.setJdbcUrl("jdbc:mysql://192.168.1.219:13306/shedlock?serverTimezone=Asia/Seoul&useUnicode=true&characterEncoding=utf8&useSSL=false");
         config.setUsername("test");
         config.setPassword("testPass");
